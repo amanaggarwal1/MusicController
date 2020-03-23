@@ -8,7 +8,15 @@
 
 
     <SeekBar
-        android:id="@+id/seekBar"
+        android:id="@+id/volumeseekBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="32dp"
+        android:layout_above="@id/scrubSeekBar"
+        />
+
+    <SeekBar
+        android:id="@+id/scrubSeekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="32dp"
