@@ -6,22 +6,23 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <Button
-        android:id="@+id/button"
-        android:layout_width="wrap_content"
+
+    <SeekBar
+        android:id="@+id/seekBar"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Button"
-        android:layout_centerInParent="true"
-        android:layout_margin="16dp"
-        android:onClick="playMusic"/>
+        android:layout_margin="32dp"
+        android:layout_above="@id/playPauseButton"
+        />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/playPauseButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Button"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/button"
-        android:layout_margin="16dp"
-        android:onClick="pauseMusic"/>
+        android:layout_alignParentBottom="true"
+        android:layout_margin="64dp"
+        android:onClick="playMusic"/>
+
 </RelativeLayout>
